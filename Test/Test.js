@@ -6,7 +6,19 @@ var main = require('G:/JSProjects/Shifting_v2.0.0');
     136, 137, 138, 139, 140]),[121,123,125,127,129,131,133,135,137,139,122,126,130,134,138,124,132,
     140,136,128])
 })*///for mocha
-it('Testing main function',()=>{
+it('Testing main function1',()=>{
     assert.deepEqual(main(),[121,123,125,127,129,131,133,135,137,139,122,126,130,134,138,124,
         132,140,136,128]);
-})
+});
+it('Testing main function2',()=>{
+    assert.typeOf(main(),'array');
+});
+it('Testing main function2',()=>{
+    assert.typeOf(main(),'array','main() returns array');
+});
+it('Testing main function3',()=>{
+    assert.lengthOf(main(),20);
+});
+it('Testing main function3',()=>{
+    assert.lengthOf(main(),20, 'main() returns array with length equal 20');
+});
