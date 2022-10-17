@@ -14,11 +14,17 @@ it('Testing main function2',()=>{
     assert.typeOf(main(),'array');
 });
 it('Testing main function2',()=>{
-    assert.typeOf(main(),'array','main() returns array');
+    assert.typeOf(main(),'array','main() should return array');
 });
 it('Testing main function3',()=>{
     assert.lengthOf(main(),20);
 });
-it('Testing main function3',()=>{
-    assert.lengthOf(main(),20, 'main() returns array with length equal 20');
+it('Testing main function4',()=>{
+    assert.isNotNull(main(),'main() returns null');
+});
+it('Testing main function5',()=>{
+    assert.isDefined(main(),'main() is undefined');
+});
+it('Testing main function6',()=>{
+    assert.isOk(main(),'main() does not work');
 });
