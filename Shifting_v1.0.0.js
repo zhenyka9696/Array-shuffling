@@ -49,4 +49,3 @@ function addValue() {
       }
   }
 }
-Main(deck);
